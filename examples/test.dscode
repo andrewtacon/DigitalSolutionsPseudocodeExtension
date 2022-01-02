@@ -1,0 +1,16 @@
+FUNCTION test ()
+BEGIN
+    IF there is THEN
+        
+    ENDIF
+END 
+
+//comment
+
+class.static 
+FUNCTION test (nothing)
+BEGIN
+    IF x<5 THEN
+        
+    ENDIF
+END

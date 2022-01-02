@@ -1,0 +1,37 @@
+{
+    "WHILE PRE":{
+        "prefix": ["WHILE", "WHI"],
+        "body": ["WHILE ${1:condition}","\t","ENDWHILE"],
+        "description":"Pre-tested while loop."
+    },
+    "FOR LOOP": {
+        "prefix": ["FOR"],
+        "body": ["FOR ${1:variable} = ${2:start} TO ${3:end} STEP ${4:step}", "\t", "\tNEXT ${1:variable}","END FOR"],
+        "description": "A for loop."
+    },    
+    "WHILE POST":{
+        "prefix": ["REPEAT", "REP"],
+        "body": ["REPEAT","\t","UNTIL ${1:condition}"],
+        "description":"Pre-tested while loop."
+    },
+    "IF":{
+        "prefix": ["IF"],
+        "body": ["IF ${1:condition} THEN","\t","ENDIF"],
+        "description":"Pre-tested while loop."
+    },
+    "BEGIN":{
+        "prefix": ["BEG", "BEGIN"],
+        "body": ["BEGIN","\t","END"],
+        "description":"Begin-End"    
+    },
+    "FUNCTION":{
+        "prefix": ["FUN", "FUNCTION"],
+        "body": ["FUNCTION ${1:functionName} (${2:parameters})","BEGIN","\t","END"],
+        "description":"Function"    
+    },
+    "RETURN": {
+        "prefix": ["RET", "RETURN"],
+        "body": ["RETURN ${1:functionName}"],
+        "description":"Return"  
+    }
+  }

@@ -1,0 +1,39 @@
+{
+    "name": "digital-solutions-pseudocode",
+    "displayName": "Digital Solutions Pseudocode",
+    "description": "Language extension for QCAA Digital Solutions Psuedocode",
+    "version": "0.0.1",
+    "publisher": "Andrew Tacon",
+    "engines": {
+        "vscode": "^1.63.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "dscode",
+            "aliases": ["Digital Solutions Pseudocode"],
+            "extensions": [".dscode"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "dscode",
+            "scopeName": "source.dscode",
+            "path": "./syntaxes/.tmLanguage.json"
+        }],
+        "snippets": [
+            {
+                "language": "dscode",
+                "path": "./snippets/snippets.json"
+            }
+        ],
+        "themes": [
+            {
+                "label": "dscodecolortheme",
+                "uiTheme": "vs",
+                "path": "./themes/dscodecolortheme-color-theme.json"
+            }
+        ]
+    }    
+}
